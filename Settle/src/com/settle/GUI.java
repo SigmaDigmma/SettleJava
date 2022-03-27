@@ -11,9 +11,13 @@ public class GUI {
 	private JPanel inspP;
 	private JPanel mapP;
 	private JPanel centerP;
+	private JLabel Field;
+	private SimplexToJpg simplextojpg;
 
 	
 	public GUI() {
+		simplextojpg = new SimplexToJpg();
+		
 		f = new JFrame("Settle");
 		f.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		f.setVisible(true);
@@ -32,9 +36,13 @@ public class GUI {
 		mapP.setBackground(new Color(50, 50, 50, 50));
 		mapP.setPreferredSize(new Dimension(200, 200));
 		inspP.add(mapP,BorderLayout.PAGE_END);
+		
 		centerP = new JPanel();
+		Field = new JLabel();
+		centerP.add(Field);
 		centerP.setBackground(new Color(200, 200, 200, 100));
-		centerP.setPreferredSize(new Dimension(1500, 1080));
+		centerP.setPreferredSize(new Dimension(1520, 1080));
+		Field.setIcon(new ImageIcon(simplextojpg.getImage()));
 		f.add(centerP,BorderLayout.CENTER);
 	}
 }
