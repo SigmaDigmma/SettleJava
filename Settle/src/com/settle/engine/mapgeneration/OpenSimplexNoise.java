@@ -1,4 +1,4 @@
-package com.settle;
+package com.settle.engine.mapgeneration;
 
 public class OpenSimplexNoise {
 

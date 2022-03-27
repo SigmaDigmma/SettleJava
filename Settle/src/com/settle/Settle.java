@@ -1,5 +1,7 @@
 package com.settle;
 
+import com.settle.gui.GUI;
+
 public class Settle {
 	private GUI gui;
 	
