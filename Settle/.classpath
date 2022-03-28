@@ -1,11 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="src" path="Pictures"/>
+	<classpathentry kind="src" path="lwjgl"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-15">
 		<attributes>
 			<attribute name="module" value="true"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="Pictures"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-assimp.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-assimp-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-assimp-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-assimp-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-assimp-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-bgfx.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-bgfx-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-bgfx-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-bgfx-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-bgfx-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-glfw.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-glfw-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-glfw-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-glfw-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-glfw-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nanovg.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nanovg-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nanovg-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nanovg-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nanovg-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nuklear.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nuklear-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nuklear-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nuklear-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-nuklear-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-openal.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-openal-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-openal-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-openal-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-openal-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-opengl.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-opengl-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-opengl-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-opengl-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-opengl-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-par.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-par-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-par-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-par-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-par-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-stb.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-stb-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-stb-natives-windows.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-stb-natives-windows-x86.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-stb-sources.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-vulkan.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-vulkan-javadoc.jar"/>
+	<classpathentry kind="lib" path="lwjgl/lwjgl-vulkan-sources.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
