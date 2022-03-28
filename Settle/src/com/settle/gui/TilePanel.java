@@ -2,6 +2,7 @@ package com.settle.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.GridBagLayout;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -18,17 +19,26 @@ public class TilePanel extends JPanel {
 	private Tile tile;
 	
 	public TilePanel(Tile tile) {
+		super(new GridBagLayout());
 		this.tile = tile;
-		this.setSize(new Dimension(20,30));
+		this.setSize(new Dimension(20,20));
+	//	setBackground(new Color(0x010101 * (int)((tile.getValue() + 1) * 127.5)));
 		assignIcon();
 	}
 
+	public void setTile(Tile t) {
+		this.tile = t;
+		//setBackground(new Color(0x010101 * (int)((tile.getValue() + 1) * 127.5)));
+		assignIcon();
+		validate();
+		repaint();
+	}
 	private void assignIcon() {
 		this.removeAll();
 		String iconPath = "Pictures/";
 			try {
 				BufferedImage image = ImageIO.read(new File(iconPath + tile.gettT().name() + ".png"));
-				image = resizeImage(image, this.getWidth(), this.getHeight() + 10);
+				image = resizeImage(image, this.getWidth(), this.getHeight());
 				add(new JLabel(new ImageIcon(image)));
 			} catch (IOException e) {
 				e.printStackTrace();

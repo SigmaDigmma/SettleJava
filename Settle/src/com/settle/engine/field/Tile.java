@@ -37,8 +37,8 @@ public class Tile {
 	public int generateCoordinateHashCode()
 	{
 		int result = 1;
-		result = 531 * result + x;
 		result = 531 * result + y;
+		result = 531 * result + x;
 		return result;
 	}
 

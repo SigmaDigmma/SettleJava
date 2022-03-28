@@ -7,9 +7,9 @@ import com.settle.engine.mapgeneration.OpenSimplexNoise;
 
 public class Field {
 
-	private static final int WIDTH = 50;
-	private static final int HEIGHT = 50;
-	private static final double FEATURE_SIZE = 10;
+	private static final int WIDTH = 100;
+	private static final int HEIGHT = 100;
+	private static final double FEATURE_SIZE = 20;
 	private HashMap<Integer, Tile> field;
 	
 	public Field() {

@@ -1,11 +1,11 @@
 package com.settle.engine;
 
 public enum TileType {
-	GRASS("grass", -0.3, 0),
-	SAND("sand", 0, 0.1) ,
-	WATER("water", 0.1, 0.3),
-	SNOW("snow", -1, -0.3),
-	MOUNTAIN("mountain", 0.3, 1);
+	GRASS("grass", -0.25, 0.3),
+	SAND("sand", -0.32, -0.25) ,
+	WATER("water", -1, -0.32),
+	SNOW("snow", 0.6, 1),
+	MOUNTAIN("mountain", 0.3, 0.6);
 	
 	private String name;
 	private double max;

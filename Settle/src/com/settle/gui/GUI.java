@@ -12,6 +12,7 @@ import com.settle.engine.field.*;
 
 public class GUI {
 	private JFrame f;
+	private JPanel topP;
 	private JPanel resP;
 	private JPanel inspP;
 	private JPanel mapP;
@@ -25,9 +26,14 @@ public class GUI {
 		f = new JFrame("Settle");
 		f.setExtendedState(JFrame.MAXIMIZED_BOTH);
 		f.setVisible(true);
-		f.setLayout(new BorderLayout());
+		BorderLayout borderL = new BorderLayout();
+		f.setLayout(borderL);
 		f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
 		
+		topP = new JPanel();
+		topP.setPreferredSize(new Dimension(1920,80));
+		topP.setBackground(new Color(20,20,20,100));
+		f.add(topP,BorderLayout.PAGE_START);
 		resP = new JPanel();
 		resP.setBackground(new Color(100, 100, 100, 100));
 		resP.setPreferredSize(new Dimension(460, 1080));
@@ -43,14 +49,22 @@ public class GUI {
 		inspP.add(mapP,BorderLayout.PAGE_END);
 		
 		centerP = new JPanel();
-		centerP.setLayout(new GridLayout(50, 50));
-		centerP.setBackground(new Color(200, 200, 200, 100));
+		GridLayout gL = new GridLayout(100,100);
+		centerP.setLayout(gL);
 		centerP.setPreferredSize(new Dimension(1000, 1000));
 		f.add(centerP,BorderLayout.CENTER);
 		
-		for(Tile t :field.getField().values()) {
-			centerP.add(new TilePanel(t));
+		
+		for(int i =0;i< 100*100;i++) {
+			centerP.add(new TilePanel(new Tile(0,0,0)));	
 		}
+		for(Tile t :field.getField().values()) {
+		centerP.remove(t.getY()*100+t.getX());
+		centerP.add(new TilePanel(t),t.getY()*100+t.getX());
+		}
+		
+		
+		
 		centerP.validate();
 		centerP.repaint();
 		
